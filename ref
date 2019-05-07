@@ -1,0 +1,6 @@
+ansible all -a "ls -al /home/ansible"
+ansible all -a "cat /var/log/messages"
+sudo ansible all -a "cat /var/log/messages"
+ansible all -s -a "cat /var/log/messages"
+ansible ubuntu -s -m apt -a "name=elinks state=latest"
+ansible ubuntu -s -m apt -a "name=elinks state=absent"
