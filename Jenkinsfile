@@ -5,7 +5,7 @@ stage ('SCM'){
 steps {git 'https://github.com/saaipradip/hippo.git'}
 }
 stage ('build'){
-steps {bat label: '', script: 'mvn clean'
+steps {bat label: '', script: ' clean'
    bat label: '', script: 'mvn install'}
 }
  
